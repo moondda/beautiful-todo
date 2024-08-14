@@ -15,7 +15,7 @@ const Column = (props) => {
             className="p-2 border border-gray-400"
           >
             {tasks.map((task, index) => (
-              <div key={task.id} className="border border-gray-400">
+              <div key={task.id}>
                 <Draggable draggableId={task.id} index={index}>
                   {(provided) => (
                     <div
